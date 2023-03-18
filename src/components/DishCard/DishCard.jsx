@@ -1,9 +1,10 @@
-import React from 'react';
-import {View, Text, Image} from 'react-native';
+import {TouchableOpacity, Text, Image} from 'react-native';
+
 import styles from './DishCardStyle';
-const DishCard = ({originalName, image}) => {
+
+const DishCard = ({originalName, image, onPress}) => {
   return (
-    <View style={styles.container}>
+    <TouchableOpacity onPress={onPress} style={styles.container}>
       <Image
         source={{uri: image}}
         resizeMode={image ? 'cover' : 'contain'}
@@ -12,7 +13,7 @@ const DishCard = ({originalName, image}) => {
       <Text style={styles.originalName} numberOfLines={2}>
         {originalName}
       </Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 

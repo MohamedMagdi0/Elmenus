@@ -1,6 +1,5 @@
 import {StyleSheet} from 'react-native';
-import COLORS from '../../constants/Colors';
-import FONTS from '../../constants/Fonts';
+import {Colors, Fonts} from '../../constants';
 
 const styles = StyleSheet.create({
   dishHeaderContainer: {
@@ -13,15 +12,15 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   dishHeader: {
-    color: COLORS.BLACK,
-    fontFamily: FONTS.BOLD,
+    color: Colors.BLACK,
+    fontFamily: Fonts.BOLD,
     fontSize: 18,
     alignSelf: 'center',
     fontWeight: 800,
   },
   more: {
-    color: COLORS.PRIMARY,
-    fontFamily: FONTS.REGULAR,
+    color: Colors.PRIMARY,
+    fontFamily: Fonts.REGULAR,
     fontSize: 15,
   },
 });
